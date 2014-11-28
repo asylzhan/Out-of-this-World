@@ -26,6 +26,7 @@
 		EA8A84261A1F669C00140C11 /* Out_of_this_worldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8A84251A1F669C00140C11 /* Out_of_this_worldTests.m */; };
 		EA8A84311A1F682300140C11 /* OWOuterSpaceViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8A84301A1F682300140C11 /* OWOuterSpaceViewControllerTableViewController.m */; };
 		EA8A84341A1F9F5E00140C11 /* AstronomicalData.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8A84331A1F9F5E00140C11 /* AstronomicalData.m */; };
+		EABF0BEE1A289CF8008CD4F6 /* OWSpaceImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EABF0BED1A289CF8008CD4F6 /* OWSpaceImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		EA8A84301A1F682300140C11 /* OWOuterSpaceViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OWOuterSpaceViewControllerTableViewController.m; path = ../OWOuterSpaceViewControllerTableViewController.m; sourceTree = "<group>"; };
 		EA8A84321A1F9F5E00140C11 /* AstronomicalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AstronomicalData.h; sourceTree = "<group>"; };
 		EA8A84331A1F9F5E00140C11 /* AstronomicalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AstronomicalData.m; sourceTree = "<group>"; };
+		EABF0BEC1A289CF8008CD4F6 /* OWSpaceImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSpaceImageViewController.h; sourceTree = "<group>"; };
+		EABF0BED1A289CF8008CD4F6 /* OWSpaceImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWSpaceImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				EA8A84301A1F682300140C11 /* OWOuterSpaceViewControllerTableViewController.m */,
 				EA0D88EA1A235402006DF267 /* OWSpaceObjects.h */,
 				EA0D88EB1A235402006DF267 /* OWSpaceObjects.m */,
+				EABF0BEC1A289CF8008CD4F6 /* OWSpaceImageViewController.h */,
+				EABF0BED1A289CF8008CD4F6 /* OWSpaceImageViewController.m */,
 				EA8A84131A1F669C00140C11 /* Main.storyboard */,
 				EA8A84161A1F669C00140C11 /* Images.xcassets */,
 				EA8A84181A1F669C00140C11 /* LaunchScreen.xib */,
@@ -274,6 +279,7 @@
 				EA8A840F1A1F669C00140C11 /* AppDelegate.m in Sources */,
 				EA8A840C1A1F669C00140C11 /* main.m in Sources */,
 				EA8A84341A1F9F5E00140C11 /* AstronomicalData.m in Sources */,
+				EABF0BEE1A289CF8008CD4F6 /* OWSpaceImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

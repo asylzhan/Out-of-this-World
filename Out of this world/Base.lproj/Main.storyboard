@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KPm-37-JXC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X1R-dy-CpH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Outer Space View Controller Table View Controller-->
+        <!--Space Image View Controller-->
+        <scene sceneID="ROO-iO-BBX">
+            <objects>
+                <viewController id="r7Q-j3-NAE" customClass="OWSpaceImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4FV-Wy-73H"/>
+                        <viewControllerLayoutGuide type="bottom" id="VmO-BV-NUd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ExN-6e-SPb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NO6-8J-ejp">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="scrollView" destination="NO6-8J-ejp" id="2Jb-4j-oSK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qv-7S-y8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445" y="306"/>
+        </scene>
+        <!--Planets-->
         <scene sceneID="vJT-9E-yWB">
             <objects>
                 <tableViewController id="KPm-37-JXC" customClass="OWOuterSpaceViewControllerTableViewController" sceneMemberID="viewController">
@@ -32,6 +59,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="r7Q-j3-NAE" kind="show" id="usd-cy-yC8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -39,11 +69,31 @@
                             <outlet property="delegate" destination="KPm-37-JXC" id="UC8-6b-1WG"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Planets" id="ivU-da-Ddl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79B-Fm-Iep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="306"/>
+            <point key="canvasLocation" x="1011" y="306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QLT-aZ-HqW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X1R-dy-CpH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x7A-Mq-Kc7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KPm-37-JXC" kind="relationship" relationship="rootViewController" id="EWf-EY-9WE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FdW-bG-qRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541" y="306"/>
         </scene>
     </scenes>
 </document>
